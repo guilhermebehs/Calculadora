@@ -7,9 +7,6 @@
 }
 
 
-
-
-
 	.modelo{
 	
 	border-style:solid ;
@@ -20,9 +17,39 @@
 }
 
 
-@media only screen and  (max-width: 600px){
+@media only screen and  (max-width: 710px){
 	.modelo{
-	   display: none;
+	    width: 20%; 
+     }
+
+}
+
+
+@media only screen and  (max-width: 610px){
+	.modelo{
+	    width: 25%; 
+     }
+
+}
+
+
+@media only screen and  (max-width: 490px){
+	.modelo{
+	    width: 35%; 
+     }
+
+}
+
+@media only screen and  (max-width: 360px){
+	.modelo{
+	    width: 45%; 
+     }
+
+}
+
+@media only screen and  (max-width: 280px){
+	.modelo{
+	    width: 60%; 
      }
 
 }
