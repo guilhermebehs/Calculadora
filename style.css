@@ -6,13 +6,25 @@
 
 }
 
-.modelo{
+
+
+
+
+	.modelo{
 	
 	border-style:solid ;
 	border-color:grey;
     width: 17%; 
     height: 45%;
     padding:1%;
+}
+
+
+@media only screen and  (max-width: 600px){
+	.modelo{
+	   display: none;
+     }
+
 }
 
 .teclas{

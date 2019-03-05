@@ -8,25 +8,31 @@ var DIVIDINDO = false;
 
 function digita(num){
 	var valorTela =document.getElementById('screen').value; 
+  if(num == '.' && valorTela.includes('.'))
+     return;
+
 	if(valorTela == '0')
-       document.getElementById('screen').value = num;
+       valorTela = (num == '.' ? '0.' : num);
     else{
-       valorTela+=num;
-       document.getElementById('screen').value = valorTela;
+       valorTela+=  num;
    }
+
+    document.getElementById('screen').value = valorTela;
 
   } 
 
   function guardarUltimaOperacao(){
-  	
-   var valorTela = parseInt(document.getElementById('screen').value);
+
+   var valorAux = document.getElementById('screen').value;
+   valorAux = valorAux.replace(/([.]|\.0)$/g, '');
+   var valorTela = valorAux.includes('.') ? parseFloat(valorAux) : parseInt(valorAux);
 
   	if(SOMANDO){
  	   	resultado += valorTela;
  	   	SOMANDO = false;
  	}
  	else if(SUBTRAINDO){
- 		resultado -= dvalorTela;
+ 		resultado -= valorTela;
  		SUBTRAINDO = false;
  	}
  	else if(MULTIPLICANDO){
