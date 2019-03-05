@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+ <body>
+ <div class="modelo">
+  <input type="text" readonly class="tela" value="0" id="screen"/>
+  <div class="teclas">
+   <input type="button" class="botao" value="1" onclick="digita(this.value)"/>
+   <input type="button" class="botao" value="2" onclick="digita(this.value)"/>
+   <input type="button" class="botao" value="3" onclick="digita(this.value)"/>
+   <input type="button" class="botao" value="4" onclick="digita(this.value)"/>
+   <input type="button" class="botao" value="5" onclick="digita(this.value)"/>
+   <input type="button" class="botao" value="6" onclick="digita(this.value)"/>
+   <input type="button" class="botao" value="7" onclick="digita(this.value)"/>
+   <input type="button" class="botao" value="8" onclick="digita(this.value)"/>
+   <input type="button" class="botao" value="9" onclick="digita(this.value)"/>
+   <input type="button" class="botao" value="0" onclick="digita(this.value)"/>
+   <input type="button" class="botao" value=","  onclick="digita(this.value)" disabled="true"/>
+   <input type="button" class="botao" value="+" onclick="soma()"/>
+   <input type="button" class="botao" value="-" onclick="subtrai()"/>
+   <input type="button" class="botao" value="*" onclick="multiplica()"/>
+   <input type="button" class="botao" value="/" onclick="divide()"/>
+   <input type="button" class="botao" value="C"  onclick="limparTudo()"/>
+   <input type="button" class="botao" value="CE"  onclick="limpar()"/>
+   <input type="button" class="botao" value="=" onclick="exibeResultado()"/>      
+   </div>         
+ </div>
+  </body>
+  <script src="scripts.js"></script>
+</html>
