@@ -71,6 +71,7 @@ function digita(num){
  }  
  
  
+
  function divide(){
  	
     guardarUltimaOperacao();
